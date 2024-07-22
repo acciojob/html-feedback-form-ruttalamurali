@@ -5,30 +5,29 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+		label,input {
+			margin:10px;
+			padding:3px
+		}
+	</style>
 
 <body>
-  <h2>Feedback Form</h2>
+  <h1>Feedback Form</h1>
   <form method="post">
-    <div>
-      <label id="name">Name</label>
-      <input type="text" minlength="3" maxlength="50" required>
-    </div>
     
-    <div>
-      <label id="portfolio">Portfolio</label>
-      <input type="url" required>
-    </div>
-
-    <div>
-      <label id="fav color">Favorite color</label>
-      <input type="color">
-    </div>
-
-    <div>
-      <label id="likeness">Likeness</label>
-      <input type="range" minlength="1" maxlength="100">
-    </div>
-
+      <label for="name">Name:</label>
+      <input type="Text" id="name" minlength="3" maxlength="50" required>
+	  <br>
+      <label for="portfolio">Portfolio:</label>
+      <input type="URL" id="portfolio" required>
+    <br>
+      <label for="Favorite Color">Favorite Color:</label>
+      <input type="Color" id="favColor">
+    <br>
+      <label for="Likeness">Likeness:</label>
+      <input type="Range" id="likeness" minlength="1" maxlength="100">
+	  
   </form>
     <script type="text/javascript" src="./script.js">
 </script>
